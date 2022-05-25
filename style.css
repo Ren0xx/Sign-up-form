@@ -1,8 +1,51 @@
+@font-face {
+    font-family: logo-font;
+    src: url(images/Norse-Bold.otf);
+  }
+  
+
+body{
+    margin: 0;
+    padding: 0;
+}
 .container{
     display: grid;
+    position: relative;
     grid-template-columns: 1fr 2fr;
+    /* overflow: hidden; */
 }
 img[src="images/green-leaves.png"]{
     width: auto;
     height: 100vh;
 }
+img[src="images/odin-lined.png"]
+{
+    height: calc(15vh + 1rem);
+}
+.main-left{
+    position: relative;
+    height: 100vh;
+    width:auto;
+    overflow:hidden;
+}
+.main-photo{
+    position: relative;
+}
+.odin-logo{
+    width: 100%;
+    background-color:rgb(0, 0, 0,0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    height: 150px;
+    top: 15vh;
+    
+}
+.logo-text{
+    font-size: 85px;
+    color: #ffffff !important;  
+    opacity: 1;   
+    font-family: logo-font; 
+    
+} 
