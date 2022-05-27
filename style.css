@@ -4,6 +4,8 @@
 }
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 .container{
     display: grid;
@@ -16,9 +18,8 @@ img[src="images/odin-lined.png"]
 }
 .main-left{
     position: relative;
-    height: 100vh;
+    height: max(100%, 100vh);
     width: auto;
-    overflow: hidden;
     background-image: url("images/green-leaves.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,33 +43,32 @@ img[src="images/odin-lined.png"]
     
 } 
 .wrapper {
-    display: flex;
-    justify-content: flex-start;
-    margin: 50px;
+    margin: 50px 150px 50px 0;
+    padding: 0;
 }
 .form-right{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 15px;
-    grid-column-gap: 90px;
+    grid-column-gap: 50px;
 }
 .main-right{
     margin: 100px 250px 100px 25px;
     padding: 15px;
-    line-height: 1.5;
+
 }
 input{
-    width: 200px;
+    width: 15rem;
     height: 25px;
     border-radius: 5px;
-    border: 0.5px solid #E5E7EB;
+    border: 0.5px solid #dadada;
 }
 input:focus{
-    border-color: rgb(50, 118, 245);
+    border-color: rgb(50, 118, 245); /* TO DO*/
 }
 input[type=password]{
-    border-color: red;
+    border-color: red; /* TO DO*/
 }
 button{
     background-color: hsl(156, 75%, 25%);
@@ -88,10 +88,14 @@ button{
 }
 button:hover {
     background-color: hsl(156, 70%, 45%);
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    box-shadow: 0px 15px 20px hsla(156, 78%, 54%, 0.4);
     color: #fff;
     transform: translateY(-7px);
   }
 button:active {
     transform: translateY(-1px);
+}
+a{
+    color: hsl(156, 75%, 25%);
+    text-decoration: none;
 }
