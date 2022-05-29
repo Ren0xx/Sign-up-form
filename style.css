@@ -59,16 +59,22 @@ img[src="images/odin-lined.png"]
 
 }
 input{
-    width: 15rem;
+    width: 17rem;
     height: 25px;
     border-radius: 5px;
     border: 0.5px solid #dadada;
 }
 input:focus{
-    border-color: rgb(50, 118, 245); /* TO DO*/
+    border-color: rgb(16, 80, 199); /* TO DO*/
 }
-input[type=password]{
-    border-color: red; /* TO DO*/
+.redLabel{
+    border-color:red;
+}
+.blueLabel{
+    border-color: rgb(16,80, 199);
+}
+#hiddenLabel{
+    color: rgb(231, 52, 52);
 }
 button{
     background-color: hsl(156, 75%, 25%);
