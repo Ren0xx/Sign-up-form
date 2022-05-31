@@ -6,8 +6,8 @@ const label = document.querySelector('#hiddenLabel');
 function checkPassword() {
     if (password1.value === password2.value){
         label.hidden = true;
-        password1.className = "blueLabel"
-        password2.className = "blueLabel"
+        password1.className = "";
+        password2.className = "";
     }
     else {
         label.hidden = false;
@@ -16,3 +16,4 @@ function checkPassword() {
     }
 
 }
+

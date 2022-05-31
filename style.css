@@ -6,6 +6,7 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
+    
 }
 .container{
     display: grid;
@@ -38,7 +39,6 @@ img[src="images/odin-lined.png"]
 .logo-text{
     font-size: clamp(40px,85px, 120px);
     color: #ffffff;  
-    opacity: 1;   
     font-family: logo-font; 
     
 } 
@@ -68,10 +68,7 @@ input:focus{
     border-color: rgb(16, 80, 199); /* TO DO*/
 }
 .redLabel{
-    border-color:red;
-}
-.blueLabel{
-    border-color: rgb(16,80, 199);
+    border-color:rgb(255, 0, 0);
 }
 #hiddenLabel{
     color: rgb(231, 52, 52);
